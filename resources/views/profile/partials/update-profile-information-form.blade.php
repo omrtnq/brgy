@@ -18,9 +18,33 @@
         @method('patch')
 
         <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+            <x-input-label for="firstName" :value="__('First Name')" />
+            <x-text-input id="firstName" name="firstName" type="text" class="mt-1 block w-full" :value="old('firstName', $user->firstName)" required autofocus autocomplete="firstName" />
+            <x-input-error class="mt-2" :messages="$errors->get('firstName')" />
+        </div>
+
+        <div>
+            <x-input-label for="lastName" :value="__('Last Name')" />
+            <x-text-input id="lastName" name="lastName" type="text" class="mt-1 block w-full" :value="old('lastName', $user->lastName)" required autofocus autocomplete="lastName" />
+            <x-input-error class="mt-2" :messages="$errors->get('lastName')" />
+        </div>
+
+        <div>
+            <x-input-label for="gender" :value="__('Gender')" />
+            <x-text-input id="gender" name="gender" type="text" class="mt-1 block w-full" :value="old('gender', $user->gender)" required autofocus autocomplete="gender" />
+            <x-input-error class="mt-2" :messages="$errors->get('gender')" />
+        </div>
+
+        <div>
+            <x-input-label for="age" :value="__('Age')" />
+            <x-text-input id="age" name="age" type="text" class="mt-1 block w-full" :value="old('age', $user->age)" required autofocus autocomplete="age" />
+            <x-input-error class="mt-2" :messages="$errors->get('age')" />
+        </div>
+
+        <div>
+            <x-input-label for="contactNumber" :value="__('Contact Number')" />
+            <x-text-input id="contactNumber" name="contactNumber" type="text" class="mt-1 block w-full" :value="old('contactNumber', $user->contactNumber)" required autofocus autocomplete="contactNumber" />
+            <x-input-error class="mt-2" :messages="$errors->get('contactNumber')" />
         </div>
 
         <div>
